@@ -19,6 +19,7 @@
   "homepage": "https://github.com/7heWorrior/WT_cp#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.0"
+    "hbs": "^4.1.0",
+    "mongoose": "^5.9.9"
   }
 }

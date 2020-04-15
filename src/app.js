@@ -21,6 +21,12 @@ app.use(express.static(publicPath))
 app.get('',(req,res)=>{
     res.render('index')
 })
+app.get('/about',(req,res)=>{
+    res.render('about')
+})
+app.get('/video', (req,res)=>{
+    res.render('video')
+})
 
 
 app.listen(3000, () =>{
