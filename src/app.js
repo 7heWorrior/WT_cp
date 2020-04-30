@@ -1,32 +1,39 @@
 //console.log('this is starting of Course Project')
 const path = require('path')
 const express = require('express')
-const hbs = require('hbs')
+require('../src/db/database')
+const userRouter = require('../src/routers/users')
+const recipeRouter = require('../src/routers/recipes')
+const forumRouter = require('../src/routers/forums')
 
-
-// console.log(__dirname)
 const publicPath = path.join(__dirname, '../public')
-const viewsPath = path.join(__dirname,'../templates/views')
-const partialsPath = path.join(__dirname,'../templates/partials')
-
 const app = express()
-
-app.set('view engine', 'hbs')
-app.set('views',viewsPath)
-hbs.registerPartials(partialsPath)
 app.use(express.static(publicPath))
+app.use(express.json())
+app.use(userRouter)
+app.use(recipeRouter)
+app.use(forumRouter)
 
 
 
-app.get('',(req,res)=>{
-    res.render('index')
+app.get('/login',(req,res)=>{
+    res.render('login')
 })
-app.get('/about',(req,res)=>{
-    res.render('about')
+app.get('/frontpage',(req,res)=>{
+    res.render('frontpage')
 })
-app.get('/video', (req,res)=>{
-    res.render('video')
+app.get('/discussion',(req,res)=>{
+    res.render('discussion')
 })
+app.get('replies',(req,res)=>{
+    res.render('layoutpage')
+})
+// app.get('/about',(req,res)=>{
+//     res.render('about')
+// })
+// app.get('/video', (req,res)=>{
+//     res.render('video')
+// })
 
 
 app.listen(3000, () =>{

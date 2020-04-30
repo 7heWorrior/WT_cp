@@ -4,7 +4,8 @@
   "description": "Course project on web technology using Nodejs and MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,11 @@
   },
   "homepage": "https://github.com/7heWorrior/WT_cp#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "hbs": "^4.1.0",
-    "mongoose": "^5.9.9"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.9",
+    "unsplash-js": "^6.0.0",
+    "validator": "^13.0.0"
   }
 }

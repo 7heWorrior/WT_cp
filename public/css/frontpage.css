@@ -1,0 +1,38 @@
+* {
+  font-family: latha;
+}
+
+.box {
+  width: 900px;
+  float: right;
+  border: 1px solid none;
+}
+.box ul li {
+  width: 120px;
+  float: left;
+  margin: 10px auto;
+  text-align: center;
+}
+.boxulli: hover {
+  background-color: blue;
+}
+.boxulli a: hover {
+  background-color: green;
+}
+.wd {
+  width: 300px;
+  height: 539px;
+  background-color: black;
+  opacity: 0.9;
+  padding: 80px;
+  color: white;
+}
+.wd h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-width: 100px;
+}
+.wd h2 {
+  text-align: center;
+  color: darkgray;
+}

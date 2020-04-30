@@ -7,17 +7,23 @@
   /*border: .02px dotted;
    border-color: white; */
 }
+pre{
+  text-align: left;
+  font-family: FantasqueSansMonoRegular;
+
+}
 html {
   scroll-behavior: smooth;
 }
 body {
   background-color:#b2ebf2 ;
-  background-image: url('../../img/coffeeshop.gif');
+  /* background-image: url('../../img/coffeeshop.gif'); */
 	font-weight: 300;
 	line-height: 1.5;
 	font-size: 16px;
   border-color: #b2ebf2;
 }
+
 .container{
   width: 100%;
   display: flex;
@@ -34,12 +40,14 @@ body {
   width: 10rem;
   border:none;
 }
-form input[type="email"] {
+form input {
   max-width: 275px;
   width: 100%;
   padding: 5px;
 }
-
+img{
+  width: 20rem;
+}
 form input[type="submit"] {
   max-width: 150px;
   width: 100%;
@@ -48,6 +56,9 @@ form input[type="submit"] {
   border: 0;
   background-color: #f1c40f;
 }
+form p{
+  text-align: left;
+}
 .main-content{
   margin: 16rem;
   border-color: #b2ebf2;
@@ -55,9 +66,6 @@ form input[type="submit"] {
 }
 h1{
   font-size: 4rem;
-}
-h3{
-  color: white;
 }
 header{
   top: 0;
@@ -197,37 +205,3 @@ footer > span {
   cursor: pointer;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
