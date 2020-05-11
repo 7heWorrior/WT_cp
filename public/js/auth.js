@@ -2,7 +2,7 @@ var token = document.cookie
 
 token = token.replace('token=','')
 
-
+console.log(token)
 
 const logged = document.querySelector('#login')
 
@@ -36,6 +36,7 @@ var settings = {
     var user = document.createElement('a')
     user.href = '/users/me'
     user.textContent = response.name
+    // document.cookie = "user=" + response.name
     // var logout = document.createElement('a')
     // logout.onclick = userLogout()
     // logout.textContent = 'LogOut'

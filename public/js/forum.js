@@ -1,7 +1,7 @@
 const data = document.querySelector("#main-content")
 var token = document.cookie
-token = token.replace('token=','')
-
+// token = token.replace('token=','')
+console.log(token)
 
 
 var settings = {

@@ -38,7 +38,9 @@ var settings = {
 $.ajax(settings).done(function (response) {
   result.textContent = "Login Successful"
     window.location.replace('/')
+    // console.log(response)
     document.cookie = "token="+ response.token
+
 })
 })
 
